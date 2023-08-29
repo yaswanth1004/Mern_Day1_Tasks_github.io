@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-5</title>
+</head>
+<body>
+    <h1 style = "color:blue;" align="center">Registration form</h1>
+    <table border="1" style = "border-collapse: collapse;" align ="center">
+        <tr>
+            <th>First Name</th>
+            <td>
+                <input type = "text" size="75">
+            </td>
+        </tr>
+        <tbody>
+            <tr>
+                <th>Last Name</th>
+                <td>
+                    <input type = "text" size="75">
+                </td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>
+                    <input type = "text" size="75">
+            </td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td>   
+                <input type = "password" size="75">
+            </td>
+            </tr>
+            <tr>
+                <th>Re-enter Password</th>
+                <td>   
+                <input type = "password" size="75">
+            </td>
+            </tr>
+            <tr>
+                <th rowspan="2">Gender:</th>
+                <td>
+                    <input type = "radio" name = "gender" value = "Male">
+                    Male
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type = "radio" name = "gender" value = "Female">
+                    Female
+                </td>
+            </tr>
+            <tr>
+                <th>Age:</th>
+                <td>
+                    <input type = "text" size = "75"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td>
+                    <input type = "text" size = "75">
+                </td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>
+                    <textarea name = "Address" id = "address" cols = "73" rows="5"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>State</th>
+                <td>
+                    <input type = "text" size = "75">
+                </td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td>
+                    <select name="Country" id = "Country">
+                        <option value="Choose your country">Choose your country</option>
+                        <option value="India">India</option>
+                        <option value = "Japan">Japan</option>
+                        <option value = "Australia">Australia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Lnaguages known</th>
+                <td>
+                    <input type="checkbox">
+                    English
+                    <input type="checkbox">
+                    Kannada
+                    <input type="checkbox">
+                    Hindi
+                    <input type="checkbox">
+                    Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                 <input type="checkbox">
+                 Hereby I declare all the given details are true 
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align = "right">
+                    Log in to
+                    <a href="https://www.ethnus.com">Ethnus</a>
+                    Website
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <input type="submit" value="Register" style="margin-left: 50%;">
+</body>
+</html>
