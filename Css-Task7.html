@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Task-7</title>
+    <style>
+        body {
+            background-color: #a22b55;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #76203f;
+            width: 800px;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .label {
+            font-weight: bold;
+            display: inline-block;
+            width: 120px;
+            margin-right: 10px;
+            text-align: right;
+        }
+
+        input,
+        select {
+            height: 30px;
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .inp {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .gender {
+            display: flex;
+            align-items: center;
+        }
+
+        .gender label {
+            margin-right: 10px;
+        }
+
+        input[type="radio"] {
+            height: 15px;
+            width: 15px;
+        }
+
+        .submit-btn {
+            color: black;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#">
+            <div class="inp">
+                <label for="name" class="label">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Your NAME">
+            </div>
+
+            <div class="inp">
+                <label for="email" class="label">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Your Email">
+            </div>
+
+            <div class="inp">
+                <label for="password" class="label">Password:</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div class="inp">
+                <label for="phone" class="label">Phone Number:</label>
+                <input type="number" name="phone" id="phone">
+            </div>
+
+            <div class="inp">
+                <label for="gender" class="label">Gender:</label>
+                <div class="gender">
+                    <label for="male">Male:</label>
+                    <input type="radio" name="gender" id="male">
+                    <label for="female">Female:</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="other">Other:</label>
+                    <input type="radio" name="gender" id="other">
+                </div>
+            </div>
+
+            <div class="inp">
+                <label for="language" class="label">Language:</label>
+                <select name="language" id="language">
+                    <option value="select">Select a language</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Hindi">Hindi</option>
+                    <option value="English">English</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="French">French</option>
+                </select>
+            </div>
+
+            <div class="inp">
+                <label for="zipcode" class="label">Zip code:</label>
+                <input type="number" name="zipcode" id="zipcode">
+            </div>
+
+            <div class="inp">
+                <label for="about" class="label">About:</label>
+                <textarea name="about" id="about" placeholder="Write About Yourself...." rows="5"></textarea>
+            </div>
+
+            <input type="submit" name="Register" value="Register" onclick="alert('You registered successfully!')" class="submit-btn">
+        </form>
+    </div>
+</body>
+</html>

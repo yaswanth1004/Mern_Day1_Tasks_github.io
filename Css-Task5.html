@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Task5</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: yellow;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            padding: 20px;
+            gap: 30px; 
+        }
+        .nav {
+            margin-top: 5%;
+        }
+        .item {
+            width: 240px; 
+            height: 50px; 
+            background-color: white;
+            text-align: center;
+            padding-top: 17px;
+        }
+        .black-box {
+            width: 20px;
+            background-color: black;
+        }
+        .item-container:hover {
+            transform: scale(1.08);
+            transition: .5s;
+        }
+        .item-container {
+            display: grid;
+            grid-template-columns: auto 20px;
+            transition: .5s;
+            margin-bottom: 10%; 
+        }
+        .content {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="item-container">
+                <div class="item">
+                    <a href><b>Home Page</b></a>
+                </div>
+                <div class="black-box"></div>
+            </div>
+            <div class="item-container">
+                <div class="item">
+                    <a href><b>Musings</b></a>
+                </div>
+                <div class="black-box"></div>
+            </div>
+            <div class="item-container">
+                <div class="item">
+                    <a href><b>My Town</b></a>
+                </div>
+                <div class="black-box"></div>
+            </div>
+            <div class="item-container">
+                <div class="item">
+                    <a href><b>Links</b></a>
+                </div>
+                <div class="black-box"></div>
+            </div>
+        </div>
+        <div class="content">
+            <p style="font-size: 50%; margin-top: 0; font-weight: bolder;"><h1><h1>My First Styled Page</h1></h1></p>
+            <p style="font-size: 1.2em;">
+                <br>
+                "Welcome to my styled page! "
+                <br>
+                <br>
+                <br>
+                "It lacks images, but at least it has style. And it has links, even if they don't go anywhere..."
+                <br>
+                <br>
+                <br>
+                "There should be more here, but I don't know what yet."
+            <br>
+            <br>
+            <br>
+            <br>
+            </p>
+            <hr>
+            <i style="font-size: 1.2em;">
+                "Made 30 August 2023"
+                <br>
+                "by myself."
+            </i>
+        </div>
+    </div>
+</body>
+</html>

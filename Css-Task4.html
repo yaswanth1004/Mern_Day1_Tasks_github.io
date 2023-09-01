@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-Task4</title>
+    <style>
+        .container {
+            margin-top: 3%;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin-bottom: 20px;
+            border: none;
+            transition: .5s;
+        }
+        .item:hover {
+            transform: scale(120%, 120%);
+            transition: .5s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Css-Task4</h1>
+    <div class="container">
+        <div class="cont1">
+            <button class="item" style="background-color: lightseagreen;"></button>
+            <button class="item" style="background-color: skyblue;"></button>
+            <button class="item" style="background-color: lightcoral;"></button>
+            <button class="item" style="background-color: grey;"></button>
+        </div>
+        <div class="cont2">
+            <h1 style="margin-top:0; margin-bottom: 35px;">Hoverable Sidenav Buttons</h1>
+            <p style="margin-top: 1.2em;">Hover over the buttons in the left side navigation to open them.</p>
+        </div>
+    </div>
+</body>
+</html>
